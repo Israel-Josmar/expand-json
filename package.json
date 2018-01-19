@@ -1,0 +1,26 @@
+{
+  "name": "expand-json",
+  "version": "0.1.0",
+  "description": "Expand templates on JSON",
+  "license": "MIT",
+  "author": "Josmar Dias",
+  "homepage": "https://github.com/Israel-Josmar/expand-json#readme",
+  "bugs": {
+    "url": "https://github.com/Israel-Josmar/expand-json/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Israel-Josmar/expand-json.git"
+  },
+  "keywords": [
+    "expand",
+    "json",
+    "template"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
