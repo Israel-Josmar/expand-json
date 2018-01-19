@@ -20,7 +20,7 @@
   "main": "index.js",
   "scripts": {
     "fix": "fixpack && eslint . --fix --max-warnings 0 --ignore-pattern !/.*rc.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "dependencies": {},
   "devDependencies": {
@@ -28,6 +28,7 @@
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.15.0",
     "eslint-plugin-import": "^2.8.0",
-    "fixpack": "^2.3.1"
+    "fixpack": "^2.3.1",
+    "jest": "^22.1.4"
   }
 }
