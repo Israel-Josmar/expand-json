@@ -13,6 +13,7 @@
     "keywords",
     "config",
     "main",
+    "module",
     "scripts",
     "workspaces",
     "eslintConfig"

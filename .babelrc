@@ -1,5 +1,11 @@
 {
   "env": {
+    "cjs": {
+      "presets": ["env"]
+    },
+    "esm": {
+      "presets": [["env", { "modules": false }]]
+    },
     "test": {
       "presets": [["env", { "targets": { "node": "current" } }]]
     }
