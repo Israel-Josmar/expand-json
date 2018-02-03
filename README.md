@@ -8,3 +8,6 @@ It uses Handlebars as template engine and has custom helpers.
 ```
 npm install expand-json
 ```
+
+## Roadmap
+[x] expand templates on json

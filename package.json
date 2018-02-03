@@ -28,7 +28,10 @@
     "test": "jest --watch",
     "test:prepublish": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash.flow": "^3.5.0",
+    "mustache": "^2.3.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
