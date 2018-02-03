@@ -49,3 +49,23 @@ test('should expand all templates on an object literal', () => {
 
   expect(result).toEqual(expected)
 })
+
+test('upper helper', () => {
+  const json = {
+    something: { usual: '{{ name }}' },
+    should: { upper: '{{#upper}}{{ name }}{{/upper}}' },
+  }
+
+  const payload = {
+    name: 'john',
+  }
+
+  const expected = {
+    something: { usual: 'john' },
+    should: { upper: 'JOHN' },
+  }
+
+  const result = expandJson(json, payload)
+
+  expect(result).toEqual(expected)
+})

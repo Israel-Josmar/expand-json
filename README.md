@@ -11,3 +11,4 @@ npm install expand-json
 
 ## Roadmap
 [x] expand templates on json
+[x] add `upper` helper: `{{#upper}}{{name}}{{/upper}}`
