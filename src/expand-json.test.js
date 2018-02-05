@@ -50,6 +50,12 @@ test('should expand all templates on an object literal', () => {
   expect(result).toEqual(expected)
 })
 
+test('special character on payload', () => {
+  const result = expandJson({ A: '{{ special }}' }, { special: '/' })
+
+  expect(result).toEqual({ A: '/' })
+})
+
 test('upper helper', () => {
   const json = {
     something: { usual: '{{ name }}' },

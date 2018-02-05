@@ -1,5 +1,8 @@
 import flow from 'lodash.flow'
-import { render } from 'mustache'
+import Mustache from 'mustache'
+
+// bypass mustache HTML escape
+Mustache.escape = (value) => value
 
 const helpers = {
   upper: () => (text, render) => {
@@ -15,7 +18,7 @@ const helpers = {
 export const expandJson = (json, payload) => (
   flow([
     JSON.stringify,
-    (_) => render(_, Object.assign({}, payload, helpers)),
+    (_) => Mustache.render(_, Object.assign({}, payload, helpers)),
     JSON.parse,
   ])(json)
 )
