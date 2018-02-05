@@ -11,7 +11,7 @@ npm install expand-json
 ```
 
 ## Usage
-```
+```javascript
 import { expandJson } from 'expand-json'
 
 const mapping = {
